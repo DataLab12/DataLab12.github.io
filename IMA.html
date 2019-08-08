@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Satellite Imagery Object Detection</title>
+    <title>IMA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="siod_assets/css/styles.min.css">
+    <link rel="stylesheet" href="IMA_assets/css/styles.min.css">
 </head>
 
 <body>
@@ -35,34 +35,27 @@
     </nav>
     <section>
         <div class="jumbotron jumbotron_with_image">
-            <h1 class="text-center" style="color: rgb(255,255,255);"><strong>Satellite Imagery Object Detection using
-                    Deep Learning</strong></h1>
-            <p class="text-center" style="font-size: 24px;color: rgb(255,255,255);"><strong>We utilize the publically
-                    available MaskRCNN state of the art object detection framework to detect and segment objects of
-                    interest from high resolution satellite imagery</strong></p>
+            <h1 class="text-center"><strong>IMA MaskRCNN Web App</strong></h1>
+            <p class="text-center" style="font-size: 24px;background-color: rgba(255,255,255,0.54);"><strong>Mask RCNN Web based application designed to accept an image over a network, run inferencing, and return detections to user in COCO JSON format</strong></p>
         </div>
     </section>
-    <div class="text-center" style="background-color: rgb(238,244,247);">
-        <p class="text-center" style="font-size: 20px;">The City of Austin hires geographers to manually annotate objects of interest from satellite imagery of Austin, TX every other year. Not only is this process labor and resource intensive, but it is expensive as well, costing the city roughtly
-            $500,000 per dataset that they want to create. They granted us access to three years of manually annotated data, which we converted to the MS COCO annotation format so that we could train the MaskRCNN algorithm to automatically detect and
-            segment these objects of interest. Below are examples of models that we have trained juxtaposed to the ground truth masks on the left.&nbsp;</p><img src="siod_assets/img/results.png">
-        <p class="text-center" style="font-size: 20px;">To efficiently create and evaluate our models, we developed an easy to use pipeline for MaskRCNN located at this repo. It is a toolkit that allows the user to rapidy train models by specifying what GPU they want to train on. For example, if you
-            have 8 GPUs, you can train 8 models at the same time.&nbsp;</p>
-        <p class="text-center" style="font-size: 20px;">For a more in depth look at our process for this project, please refer to this presentation <a href="https://docs.google.com/presentation/d/11RHGZgWBz80Uv69czvHKkKF8c__UkdacSIW_2OMDcrw/edit?usp=sharing">here</a>. Also don't forget to look at our
-            poster for this project <a href="siod_assets/BrentConnieREUPoster2019.pdf">here</a>.</p>
+    <div style="background-color: rgb(238,244,247);">
+        <p class="text-center" style="font-size: 20px;">We built a MaskRCNN web application that accepts an image as input from a web browser, processes that image to detect objects, and then returns all detections in a COCO JSON file back to the user. We also walk through how to launch this application
+            on a remote server, and then access that remote server from a local machine.&nbsp;</p>
+        <p class="text-center" style="font-size: 20px;">For more information on the project, please visit its Github link <a href="https://github.com/MrDemeanor/Mask-RCNN-WebApp">here</a>.&nbsp;</p>
     </div>
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-github"></i></a></div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="https://www.txstate.edu">Texas State CS</a></li>
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Texas State CS</a></li>
                 <li class="list-inline-item"><a href="#">About</a></li>
             </ul>
             <p class="copyright">Lab M12 © 2019</p>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
 
