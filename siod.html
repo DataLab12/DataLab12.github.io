@@ -11,37 +11,34 @@
 </head>
 
 <body>
-    <div class="text-center" id="top_image">
-        <a href="index.html"><img src="homepage_assets/img/M12.png" width="75"></a>
-    </div>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mx-auto" style="font-size: 22px;">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
+				<li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="separatus.html">Separatus</a>
-                            <a class="dropdown-item" role="presentation" href="siod.html">Satellite Imagery Object Detection</a>
-                            <a class="dropdown-item" role="presentation" href="transfer_learning.html">Transfer Leanring for the Maritime Enviroment</a>
-                            <a class="dropdown-item" role="presentation" href="via_tool.html">VGG Image Annotator Tool for COCO json</a>
-                            <a class="dropdown-item" role="presentation" href="IMA.html">IMA MaskRCNN Web App</a>
+                            <a class="dropdown-item" role="presentation" href="transfer_learning.html">Deep Learning For Maritime Domain</a>
+							<a class="dropdown-item" role="presentation" href="small_sample.html">Object Detection at Multiple Levels of Description</a>
+							<a class="dropdown-item" role="presentation" href="siod.html">Detecting Structures in Overhead Imagery</a>
                         </div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://git.txstate.edu/m12">Github</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+					<li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Tools</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="via_tool.html">Tool: Overhead Object Annotation</a>
+							<a class="dropdown-item" role="presentation" href="separatus.html">Tool: Box2Mask Annotation Refinement</a>
+                            <a class="dropdown-item" role="presentation" href="IMA.html">Tool: Web App wrapper for Deep Learning</a>
+                        </div>
+                    </li>
+					<li class="nav-item" role="presentation"><a class="nav-link" href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <section>
-        <div class="jumbotron jumbotron_with_image">
-            <h1 class="text-center" style="color: rgb(255,255,255);"><strong>Satellite Imagery Object Detection using
-                    Deep Learning</strong></h1>
-            <p class="text-center" style="font-size: 24px;color: rgb(255,255,255);"><strong>We utilize the publically
-                    available MaskRCNN state of the art object detection framework to detect and segment objects of
-                    interest from high resolution satellite imagery</strong></p>
+        <div class="jumbotron jumbotron">
+            <h1 class="text-center" style="color: rgb(255,255,255);"><strong>Detecting Structure in Overhead Imagery</strong></h1>
+            <p class="text-center" style="font-size: 24px;color: rgb(255,255,255);"><strong> Extend and adapt baseline MaskRCNN for City of Austin overhead dataset</strong></p>
         </div>
     </section>
     <div class="text-center" style="background-color: rgb(238,244,247);">
@@ -50,18 +47,18 @@
             segment these objects of interest. Below are examples of models that we have trained juxtaposed to the ground truth masks on the left.&nbsp;</p><img src="siod_assets/img/results.png">
         <p class="text-center" style="font-size: 20px;">To efficiently create and evaluate our models, we developed an easy to use pipeline for MaskRCNN located at <a href="https://github.com/MrDemeanor/MaskRCNNJupyterSuite">this repo</a>. It is a toolkit that allows the user to rapidy train models
             by specifying what GPU they want to train on. For example, if you have 8 GPUs, you can train 8 models at the same time.&nbsp;</p>
-        <p class="text-center" style="font-size: 20px;">For a more in depth look at our process for this project, please refer to this presentation <a href="https://docs.google.com/presentation/d/11RHGZgWBz80Uv69czvHKkKF8c__UkdacSIW_2OMDcrw/edit?usp=sharing">here</a>. Also don't forget to look at our
-            poster for this project <a href="siod_assets/BrentConnieREUPoster2019.pdf">here</a>.</p>
+        <p class="text-center" style="font-size: 20px;">For a more in depth look at our process for this project, please refer to this presentation <a href="https://docs.google.com/presentation/d/11RHGZgWBz80Uv69czvHKkKF8c__UkdacSIW_2OMDcrw/edit?usp=sharing">here</a>. 
+		
+		NSF REU Poster Presentation <a href="siod_assets/BrentConnieREUPoster2019.pdf">pdf</a>.</p>
     </div>
     <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-github"></i></a></div>
+        <footer>     
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="https://www.txstate.edu">Texas State CS</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
+				<li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="https://cs.txstate.edu">Texas State CS</a></li>
+				<li class="list-inline-item"><a href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
             </ul>
-            <p class="copyright">Lab M12 © 2019</p>
+            <p class="copyright">Data Lab 12 © 2019</p>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
