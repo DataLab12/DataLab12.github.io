@@ -1,97 +1,58 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Data Lab at Texas State</title>
-	<link rel="stylesheet" href="homepage_assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="homepage_assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="homepage_assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="homepage_assets/css/styles.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="sty/css/bootstrap.min.css">
+  <link rel="stylesheet" href="sty/css/font-awesome.min.css">
+  <link rel="stylesheet" href="sty/css/ionicons.min.css">
+  <link rel="stylesheet" href="sty/css/styles.min.css">
+  <title>Data Lab at Texas State</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav mx-auto" style="font-size: 22px;">
-				<li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
-                        <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="transfer_learning.html">Deep Learning For Maritime Domain</a>
-							<a class="dropdown-item" role="presentation" href="small_sample.html">Object Detection at Multiple Levels of Description</a>
-							<a class="dropdown-item" role="presentation" href="siod.html">Detecting Structures in Overhead Imagery</a>
-                        </div>
-                    </li>
-					<li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Tools</a>
-                        <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="via_tool.html">Tool: Overhead Object Annotation</a>
-							<a class="dropdown-item" role="presentation" href="separatus.html">Tool: Box2Mask Annotation Refinement</a>
-                            <a class="dropdown-item" role="presentation" href="IMA.html">Tool: Web App wrapper for Deep Learning</a>
-                        </div>
-                    </li>
-					<li class="nav-item" role="presentation"><a class="nav-link" href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section>
-        <div class="jumbotron jumbotron">
-            <h1 class="text-center"><strong>Data Lab @ Texas State University</strong></h1>
-            <p class="text-center" style="font-size: 24px;"><strong> Research Lead: <a href="https://jtesic.github.io">Dr. Jelena Te&#353i&#263;</a></strong></p>
-        </div>
-    </section>
-    <div class="team-boxed">
-        <div class="container">
-		   <div class="text-center" id="top_image">
-                <a href="index.html"><img src="homepage_assets/img/M12.png" width="75"></a>
-            </div>
-            <div class="row justify-content-center people">
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="homepage_assets/img/nick.jpg">
-                        <h3 class="name">Nicholas Warren</h3>
-                        <p class="title">Undergraduate Research Assistant</p>
-                        <p class="description">Nick focuses on adapting deep learning methods for maritime domain.</p>
-                        <div class="social" style="font-size: 30px;"><a href="https://github.com/DataLab12"><i class="fa fa-github"></i></a></div>
-                    </div>
-                </div>
-				<div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="homepage_assets/img/brent1.jpg">
-                        <h3 class="name">Brent Redmon</h3>
-                        <p class="title">Undergraduate Research Assistant</p>
-                        <p class="description">Brent's research  focuses on satellite imagery object detection on edge.<br></p>
-                        <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="fa fa-github"></i></a></div>
-                    </div>
-                </div>
-				<div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="homepage_assets/img/bo.jpeg">
-                        <h3 class="name">David Bo Heyse</h3>
-                        <p class="title">Undergraduate Resarch Assistant</p>
-                        <p class="description">Bo's research focus is small sample learning in unstructured data.</p>
-						<div class="social" style="font-size: 30px;"><a href="https://github.com/DataLab12"><i class="fa fa-github"></i></a></div>						
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="text-center" id="where-are-we">
-            <p style="color: rgb(42,106,170);font-size: 26px;"><strong>Lab is located on the Mezzanine floor of Derrick Hall.&nbsp;</strong></p><img id="map" src="homepage_assets/img/derrick_map.png" style="width: 378px;"></div>
-    </div>
-    <div data-bs-parallax-bg="true" style="height: 500px;background-image: url(&quot;homepage_assets/img/derrick.jpeg&quot;);background-position: center;background-size: cover;"></div>
-    <div class="footer-basic">
-        <footer>     
-            <ul class="list-inline">
-				<li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="https://cs.txstate.edu">Texas State CS</a></li>
-				<li class="list-inline-item"><a href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
-            </ul>
-            <p class="copyright">DataLab12 @ TXST</p>
-        </footer>
-    </div>
-    <script src="homepage_assets/js/jquery.min.js"></script>
-    <script src="homepage_assets/js/bootstrap.bundle.min.js"></script>
-    <script src="homepage_assets/js/script.min.js"></script>
-</body>
+  <div class="container-fluid max-width:1250px">
+  <embed type="text/html" src="header.html">
 
+    <div class="jumbotron_with_image" style="background-image: url(sty/img/frontpage.jpg);background-size: auto;background-position: center;height: 226px;">
+      <h1 class="text-center"><br /></br ><strong>Data Lab @ Texas State University</strong></h1>
+      <h3 class="text-center">Research Highlights</h3>
+    </div>
+
+  <div class="team-boxed">
+    <div class="container-fluid-xl">
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <div class="box"><img class="rounded-circle" src="maritime/img/maritime2.jpg">>
+            <p class="title"><a href="maritime.html">Object Localization and Identification in Maritime Domain</a></p>
+            <p class="description">We have developed multiple algorithms and tools to locate and identify maritime objects from overhead imagery in real time with high recall, see maritime project <a href="maritime.html">central</a> for more details.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <div class="box"><img class="rounded-circle" src="aerial/img/aerial.png">
+            <p class="title"><a href="aerial.html">Identifying Structures in Aerial Overhead Imagery</a></p>
+            <p class="description">We train a deep learning model to identify structures of varying size in overhead imagery. We adapt the framework for Mobile Deep Learning, and deploy it on Nvidia Jetson TX2 mobile platform. </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item">
+          <div class="box"><img class="rounded-circle" src="health/img/health2.png">
+            <p class="title"><a href="health.html">Sclalable Health Data Integration and Analysis</a></p>
+            <p class="description">We use data reduction and network analysis techniques to scale integration and analysis of biological and clinical data.</p>
+          </div>
+        </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <div class="box"><img class="rounded-circle" src="social/img/social.png">
+          <p class="title"><a href="social.html">Social Balance Theory for SNA</a></p>
+          <p class="description"> We have proposed and implemented algorithm for quantifying disbalance and predicting outcomes in social networks that scales social balance theory to large social networks.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <embed type="text/html" src="footer.html">
+
+    <script src="sty/js/jquery.min.js"></script>
+    <script src="sty/js/bootstrap.bundle.min.js"></script>
+    <script src="sty/js/script.min.js"></script>
+  </body>
 </html>
