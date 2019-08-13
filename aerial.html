@@ -22,54 +22,55 @@
 
     </section>
     <div class="text-center" style="background-color: rgb(238,244,247);">
-        <p class="text-center" style="font-size: 20px;">The City of Austin hires geographers to manually annotate objects of interest from satellite imagery of Austin, TX every other year. Not only is this process labor and resource intensive, but it is expensive as well, costing the city roughtly
-            $500,000 per dataset that they want to create. They granted us access to three years of manually annotated data, which we converted to the MS COCO annotation format so that we could train the MaskRCNN algorithm to automatically detect and
-            segment these objects of interest. Below are examples of models that we have trained juxtaposed to the ground truth masks on the left.&nbsp;</p><img src="siod_assets/img/results.png">
-        <p class="text-center" style="font-size: 20px;">To efficiently create and evaluate our models, we developed an easy to use pipeline for MaskRCNN located at <a href="https://github.com/MrDemeanor/MaskRCNNJupyterSuite">this repo</a>. It is a toolkit that allows the user to rapidy train models
-            by specifying what GPU they want to train on. For example, if you have 8 GPUs, you can train 8 models at the same time.&nbsp;</p>
-        <p class="text-center" style="font-size: 20px;">For a more in depth look at our process for this project, please refer to this presentation <a href="https://docs.google.com/presentation/d/11RHGZgWBz80Uv69czvHKkKF8c__UkdacSIW_2OMDcrw/edit?usp=sharing">here</a>.
+        <p class="text-center".</p>
+        Geospatial analysis is the process of manipulating geographic data as it pertains to terrain, topology, geomorphology, temporal locality, and history, and applying such data against a geographic model to infer upon or better understand an objective reality. Applications of geospatial analysis include, but are not limited to, land use and storm water management on fecal coliform contamination \cite{vitro_bendor_jordanova_miles_2017}, emissions assessment of municipal landfills \cite{el-fadel_abi-esber_salhab_2012}, preconstruction planning of new development with a focus on graceful spatial integration \cite{doi:10.1061/(ASCE)EI.1943-5541.0000257}, and other areas of logistics and risk management, especially in urban settings. Given the broad spectrum of use cases and needs for such a form of analysis, it is imperative that the acquisition and logical ordering of geographic data be streamlined and economical for all entities in need of such data. In this paper, we present a system that detects objects of interest from temporal overhead imagery by means of deep convolutional neural networks and region proposals, and then converts those detections into a format that can be read and manipulated in geodatabase programs like ArcGIS or QGIS. We adapt models models and infer on City of Austin temporal overhead imagery for the City of Austin Watershed Department and show how modifications to the mask layer of each model affects performance.
+    </p>
 
-		NSF REU Poster Presentation <a href="siod_assets/BrentConnieREUPoster2019.pdf">pdf</a>.</p>
-    Geospatial analysis is the process of manipulating geographic data as it pertains to terrain, topology, geomorphology, temporal locality, and history, and applying such data against a geographic model to infer upon or better understand an objective reality. Applications of geospatial analysis include, but are not limited to, land use and storm water management on fecal coliform contamination \cite{vitro_bendor_jordanova_miles_2017}, emissions assessment of municipal landfills \cite{el-fadel_abi-esber_salhab_2012}, preconstruction planning of new development with a focus on graceful spatial integration \cite{doi:10.1061/(ASCE)EI.1943-5541.0000257}, and other areas of logistics and risk management, especially in urban settings. Given the broad spectrum of use cases and needs for such a form of analysis, it is imperative that the acquisition and logical ordering of geographic data be streamlined and economical for all entities in need of such data. In this paper, we present a system that detects objects of interest from temporal overhead imagery by means of deep convolutional neural networks and region proposals, and then converts those detections into a format that can be read and manipulated in geodatabase programs like ArcGIS or QGIS. We analyze nine trained models and infer on City of Austin temporal overhead imagery for the City of Austin Watershed Department and show how modifications to the mask layer of each model affects performance. We also discuss the feasibility of deploying a state of the art deep learning model onto the Nvidia Jetson TX2 mobile platform as well as the motivations for acquiring such a system. Code is publicly available as referenced throughout the paper.
+        <ul class="list-inline ">
+           <li class="list-inline-item">>NSF REU Poster Presentation <a href="siod_assets/BrentConnieREUPoster2019.pdf">pdf</a></li>
+           <li class="list-inline-item"><a href="https://www.github.com/DataLab12/AerialPipeline"><i class="icon ion-social-github"></i></a></li>
+         </ul>
+</div>
 
     <div class="team-boxed">
       <div class="container">
         <div class="row justify-content-center people">
           <div class="col-md-6 col-lg-4 item">
                       <div class="box"><img class="rounded-circle" src="sty/img/brent1.jpg">
-                          <h3 class="name">Brent Redmon</h3>
+                          <h3 class="name"><a href="https://www.github.com/MrDemeanor"></a>Brent Redmon</h3>
                           <p class="title">Undergraduate Research Assistant</p>
-                          <p class="description">Brent's research  focuses on satellite imagery object detection on edge.<br></p>
-                          <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="fa fa-github"></i></a></div>
+                          <p class="description">Brent's research  focuses on scalable satellite imagery object detection on edge.<br></p>
                       </div>
                   </div>
         </div>
-        <div class="row justify-content-center people">
-          <div class="col-md-6 col-lg-4 item">
-                      <div class="box"><img class="rounded-circle" src="sty/img/brent1.jpg">
-                          <h3 class="name">Constance Xu</h3>
-                          <p class="title">REU Student, Stevents University</p>
-                          <p class="description">Feasibility of deploying deep learning on NVIDIA JETSON XT2<br /></p>
-                          <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="fa fa-github"></i></a></div>
+        <div class="team-boxed">
+          <div class="container">
+            <div class="row justify-content-center people">
+              <div class="col-md-6 col-lg-4 item">
+                          <div class="box"><img class="rounded-circle" src="sty/img/daniel.jpg">
+                              <h3 class="name">Daniel Le</h3>
+                              <p class="title">Undergraduate Research Assistant</p>
+                              <p class="description">Daniel's research  focused on data processing from ArcGIS format to deep learning compatible image annotations. <br></p>
+                          </div>
                       </div>
-                  </div>
-        </div>
-      </div>
+            </div>
 
-    </div>
-    <div class="footer-basic">
-        <footer>
-            <ul class="list-inline">
-				<li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="https://cs.txstate.edu">Texas State CS</a></li>
-				<li class="list-inline-item"><a href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
-            </ul>
-            <p class="copyright">DataLab12 @ TXST</p>
-        </footer>
-    </div>
-    <script src="sty/js/jquery.min.js"></script>
-    <script src="sty/js/bootstrap.bundle.min.js"></script>
-    <script src="sty/js/script.min.js"></script>
-</body>
+            <div class="team-boxed">
+              <div class="container">
+                <div class="row justify-content-center people">
+                  <div class="col-md-6 col-lg-4 item">
+                              <div class="box"><img class="rounded-circle" src="sty/img/daniel.jpg">
+                                  <h3 class="name">Constance Xu</h3>
+                                  <p class="title">NSF REU Summer Researcher</p>
+                                  <p class="description">Connie's research focued on feasibility of deploying overhead image recognition on NVIDIA JETSON TX2 <br></p>
+                              </div>
+                          </div>
+                </div>
 
-</html>
+            <embed type="text/html" src="footer.html">
+
+            <script src="sty/js/jquery.min.js"></script>
+            <script src="sty/js/bootstrap.bundle.min.js"></script>
+            <script src="sty/js/script.min.js"></script>
+          </body>
+        </html>
