@@ -14,76 +14,95 @@
   <embed type="text/html" src="header.html">
   </div>
   <div class="jumbotron_with_image" style="background-image: url(maritime/img/maritime.jpg);background-size: auto;background-position: center;height: 300px;">
-    <h1 class="text-center"><strong><br /><br /><br />Object Localization and Identification in Maritime Domain</strong></h1>
+    <h1 class="text-center"><strong><br /><br /><br />  </ br>Object Localization and Identification in Maritime Domain</strong></h1>
     <h3 class="text-center">Overhead Imagery and Video Data</h3>
   </div>
 
+  <div class="container-fluid text-center" style="background-color: rgb(238,244,247);">
+
+    <h3 class="text-center">  </ br>Identifying Maritime Vessels at Multiple Levels of Descriptions using Deep Features</h3>
+    <div class="text-center">David Bo Heyse, Nicholas Warren, and Jelena Te&#353i&#263;</i> </div>
+    <div class="text-center">Artificial Intelligence and Machine Learning for Multi-Domain Operations Applications, SPIE vol. 11006, Apr 2019, Baltimore, MD. </div>
+
+    <div class = "container-fluid" style="background-color: rgb(255,255,255);">"
+    <b>Abstract</b> :Varying resolution quality of operational data, size of targets, view occlusions, and large variation in sensors due to nature of overhead systems as compared to consumer devices contribute to degradation of the maritime vessel identification. We exploit the maritime domain characteristics to optimize and refine the deep learning Mask-RCNN framework for training generic maritime vessel classes. Maritime domain, compared to consumer domain, lack alternative targets that would be incorrectly associated as maritime vehicles: this allows us to relax the parameter constraints learned on urban natural scenes in consumer photos, adjust parameters of the model inference, and achieve robust performance and high AP measure for transfer learning scenarios. In this paper, we build upon this robust localization work, and extend our transfer learning work to new domains and datasets. We propose new approach for identifying specific category of maritime vessels and build a refined multi-label classifier that is based on deep Mask-RCNN features. The classifier is designed to be robust to domain transfer (e.g. different overhead maritime video feed), and to the noise in the data annotation (e.g. vessel is not correctly marked or label is ambiguous). We demonstrate superior category classification results of this low shot learning approach on publicly available MarDCT dataset. </ br>
+    <b>Paper</b> :<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11006/1100616/Identifying-maritime-vessels-at-multiple-levels-of-descriptions-using-deep/10.1117/12.2519248.short?SSO=1"><i class="icon ion-document-text"></i></a>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center" style="background-color: rgb(238,244,247);">
+
+        <h3 class="text-center">  </ br>Transfer learning of deep neural networks for visual collaborative maritime asset identification</h3>
+        <div class="text-center">Nicholas Warren, Benjamin Garrard, Elliot Staudt, and Jelena Te&#353i&#263;</i> </div>
+        <div class="text-center">2018 IEEE 4th International Conference on Collaboration and Internet Computing (CIC), Pages 246-255, Oct 2018 Philadelphia, PA.</div>
+
+        <div class = "container-fluid" style="background-color: rgb(255,255,255);">"
+
+          <b>Abstract</b> : Recent advances in deep learning for visual recognition demonstrate high performing pipeline for building and deploying well-performing content models. These advances come with underlying assumptions of the data characteristics pertaining to consumer image and video and availability of the large set of annotated data. In this paper we show how to apply lessons learned in the consumer domain to overhead maritime video corpora. We present how to successfully tune deep learning network to overhead maritime domain and tune parameters to new domain characteristics to achieve high performance metric with smaller set of domain annotations. This approach improves the state-of-the-art metric by 80% on maritime IPATCH data. Next, we present challenges and propose several approaches on user collaboration for maritime asset identification, and introduce the notion of persistent and intermittent models.
+          <b>Paper</b> :<a href="https://ieeexplore.ieee.org/abstract/document/8537839"><i class="icon ion-document-text"></i></a>
+        </div>
+  </div>
+
   <div class="team-boxed">
-    <div class="container">
+    <div class="container-fluid">
+        <h3 class="text-center">Tools</h3>
       <div class="row justify-content-center people">
-				<div class="col-md-6 col-lg-4 item">
+        <div class="col-md-6 col-lg-4 item">
           <div class="box"><img class="rounded-top" src="maritime/img/viaTool.png">
-            <h3 class="name">Tool: Via for video re-annotation</h3>
-            <p class="title">More on the work</p>
-            <p class="description">Link to the page and people Import, Export, and Editing of any Cocoized Annotations; isualization of annotations to insure integrity of datasets; Edit annotations and save for future training</p>
-            <div class="social" style="font-size: 30px;"><a href="https://github.com/nickeleye/VGG-Image-Annotator-for-COCO-json"><i class="fa fa-github"></i></a></div>
+              <p class="title">Via for video re-annotation</p>
+              <p class="description">Deep Learning Framework is sensitive to noisy annotations. This tool extends VIA for COCO JSON compatibility, and allows for labeling on multiple levels of description; it allows Import, Export, and Edit Video Annotations in COCO JSON format.</p>
+          <div class="social" style="font-size: 30px;"><a href="https://github.com/nickeleye/VGG-Image-Annotator-for-COCO-json"><i class="icon ion-social-github"></i></a>  <a href="https://www.youtube.com/watch?v=rFFbcFFCOaA&list=PLW53H2fnZNd-f2iAJcu_SRLOavZ2f2L_P"><i class="icon ion-social-youtube"></i></a></div>
+          </div>
         </div>
-      </div>
       <div class="col-md-6 col-lg-4 item">
-        <div class="box"><img class="rounded-top" src="maritime/img/polygons.jpg">>
-          <h3 class="name">Tool: Boxes2Mask Tool</h3>
-          <p class="title">See </p>
-          <p class="description">Bo's research focus is small sample learning in unstructured data.</p>
-          <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="fa fa-github"></i></a></div>
+        <div class="box"><img class="rounded-top" src="maritime/img/6-Figure9-1.png">>
+            <p class="title">Tool: Boxes2Mask Tool</p>
+          <p class="description">Availability of training data in non-consumer visual domain determines how good the modeling pipeline is.  In this project, we propose an interative computer vision algorithm (based on histogram inference) that in each iteration refines segmentation masks from existing annotation boxes in maritime domain.</p>
+          <div class="social" style="font-size: 30px;">
+            <a href="https://github.com/MrDemeanor/separatus"><i class="icon ion-social-github"></i>
+            <a href="https://www.youtube.com/playlist?list=PLW53H2fnZNd-_FKVoJouDF2zjafvk13Cm"><i class="icon ion-social-youtube"></i></a>
+          </div>
         </div>
       </div>
         </div>
       </div>
     </div>
 
-    <div style="background-color: rgb(238,244,247);">
-        <p class="text-center" style="font-size: 20px;"></p>
-        <p class="text-center" style="font-size: 20px;">Created a model using Deep Neural Network algoright mask-rcnn on <a href="http://cocodataset.org/#home">COCO</a> training set</p>
-        <p class="text-center" style="font-size: 20px;">Created a COCO dataset (cocoized annotated dataset) on images taken from <a href="http://www.ipatchproject.eu/">IPATCH</a> videos and combined it with original COCO training set</p>
-        <p class="text-center" style="font-size: 20px;">Used this new set to train a new model and compared both against a test set pulled from a seprate group of IPATCH videos</p>
-        <div style="text-align: center">
-            <img src="transfer_learning_assets/img/6-Figure9-1.png"/>
-        </div>
-    </div>
-
-        <div class="text-center"> 2018 IEEE CIC paper <a href="https://www.semanticscholar.org/paper/Transfer-Learning-of-Deep-Neural-Networks-for-Asset-Warren-Garrard/f348d23a88fd81e05585897629f2f230fcfe77c7#paper-header">Link to paper</a></p>
-        </div>
         <div class="team-boxed">
             <div class="container">
+                <h3 class="text-center">Students</h3>
                 <div class="row justify-content-center people">
                     <div class="col-md-6 col-lg-4 item">
                         <div class="box"><img class="rounded-circle" src="sty/img/nick.jpg">
                             <h3 class="name">Nicholas Warren</h3>
                             <p class="title">Undergraduate Research Assistant</p>
-                            <p class="description">Nick focuses on adapting deep learning methods for maritime domain.</p>
-                            <div class="social" style="font-size: 30px;"><a href="https://github.com/DataLab12"><i class="fa fa-github"></i></a></div>
+                            <p class="description">Data Lab Student Researcher since Summer 2018</p>
+                            <div class="social" style="font-size: 30px;"><a href="https://github.com/nickeleye/"><i class="icon ion-social-github"></i></a></div>
                         </div>
                     </div>
-    				<div class="col-md-6 col-lg-4 item">
-                        <div class="box"><img class="rounded-circle" src="sty/img/brent1.jpg">
-                            <h3 class="name">Brent Redmon</h3>
-                            <p class="title">Undergraduate Research Assistant</p>
-                            <p class="description">Brent's research  focuses on satellite imagery object detection on edge.<br></p>
-                            <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="fa fa-github"></i></a></div>
-                        </div>
-                    </div>
-    				<div class="col-md-6 col-lg-4 item">
+                    <div class="col-md-6 col-lg-4 item">
                         <div class="box"><img class="rounded-circle" src="sty/img/bo.jpeg">
                             <h3 class="name">David Bo Heyse</h3>
                             <p class="title">Undergraduate Resarch Assistant</p>
-                            <p class="description">Bo's research focus is small sample learning in unstructured data.</p>
-    						<div class="social" style="font-size: 30px;"><a href="https://github.com/DataLab12"><i class="fa fa-github"></i></a></div>
+                            <p class="description">Data Lab Student Researcher since Jan 2019</p>
+    						<div class="social" style="font-size: 30px;"><a href="https://github.com/DataLab12"><i class="icon ion-social-github"></i></a></div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="sty/img/brent1.jpg">
+                        <h3 class="name">Brent Redmon</h3>
+                        <p class="title">Undergraduate Research Assistant</p>
+                        <p class="description">Data Lab Student Researcher since Jan 2019<br></p>
+                        <div class="social" style="font-size: 30px;"><a href="https://www.github.com/MrDemeanor"><i class="icon ion-social-github"></i></a></div>
+                    </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+        <div class="text-center" style="background-color: rgb(238,244,247);">
+            <p class="text-center".</p> This material is based upon work supported in part by the NAVAIR N68335-18-C-0199, NSF REU #1757893, and NSF-CRI 1305302 awards. Any opinions findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the U.S. Goverment, National Science Foundation, or Department of Defense.
+        </div>
 
             <div class=container-fluid>
               <embed type="text/html" src="footer.html">

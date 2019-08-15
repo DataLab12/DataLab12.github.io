@@ -16,58 +16,58 @@
 
 </div>
 <div class="jumbotron_with_image" style="background-image: url(aerial/img/results.png); background-size: auto;background-position: center;height: 260px;">
-  <h1 class="text-center"><strong></br ></br >Identifying Structures in Aerial Overhead Imagery</strong></h1>
+  <h1 class="text-center"><strong>Learning from Overhead Imagery for Smarter Cities</br ></br ></strong></h1>
   <h3 class="text-center">City of Austin Impervious Coverage</h3>
 </div>
 
-    </section>
+    <section>
     <div class="text-center" style="background-color: rgb(238,244,247);">
         <p class="text-center".</p>
-        Geospatial analysis is the process of manipulating geographic data as it pertains to terrain, topology, geomorphology, temporal locality, and history, and applying such data against a geographic model to infer upon or better understand an objective reality. Applications of geospatial analysis include, but are not limited to, land use and storm water management on fecal coliform contamination \cite{vitro_bendor_jordanova_miles_2017}, emissions assessment of municipal landfills \cite{el-fadel_abi-esber_salhab_2012}, preconstruction planning of new development with a focus on graceful spatial integration \cite{doi:10.1061/(ASCE)EI.1943-5541.0000257}, and other areas of logistics and risk management, especially in urban settings. Given the broad spectrum of use cases and needs for such a form of analysis, it is imperative that the acquisition and logical ordering of geographic data be streamlined and economical for all entities in need of such data. In this paper, we present a system that detects objects of interest from temporal overhead imagery by means of deep convolutional neural networks and region proposals, and then converts those detections into a format that can be read and manipulated in geodatabase programs like ArcGIS or QGIS. We adapt models models and infer on City of Austin temporal overhead imagery for the City of Austin Watershed Department and show how modifications to the mask layer of each model affects performance.
+        Geospatial analysis is the process of manipulating geographic data as it pertains to terrain, topology, geomorphology, temporal locality, and history, and applying such data against a geographic model to infer upon or better understand an objective reality. Applications of geospatial analysis include, but are not limited to, land use and storm water management, emissions assessment of municipal landfills, preconstruction planning of new development with a focus on graceful spatial integration. Given the broad spectrum of use cases and needs for such a form of analysis, it is imperative that the acquisition and logical ordering of geographic data be streamlined and economical for all entities in need of such data. We have addressed the following aspects of this challenge: </ br>
+        1. Transform ArcGIS annotations into object detection compatible training format </ br>
+        2. Deep learning framework for detecting objects in overhead imagery </ br>
+        3. Object Identification on edge: MaskRCNN on NVIDIA Jetson TX2 </ br>
     </p>
+   </div>
+       <section>
 
-        <ul class="list-inline ">
-           <li class="list-inline-item">>NSF REU Poster Presentation <a href="siod_assets/BrentConnieREUPoster2019.pdf">pdf</a></li>
-           <li class="list-inline-item"><a href="https://www.github.com/DataLab12/AerialPipeline"><i class="icon ion-social-github"></i></a></li>
-         </ul>
-</div>
+    <ul class="list-group text-align: right;">
+        <li class="list-group-item list-group-item-primary">Current work products : NSF REU <a href="aerial/BrentConnieREUPoster2019.pdf">Poster</a> Presentation </a> and Code  <a href="https://www.github.com/DataLab12/AerialPipeline"><i class="icon ion-social-github"></i>
+    </ul>
 
     <div class="team-boxed">
-      <div class="container">
+      <div class="container-fluid">
+          <h3 class="text-center">Students</h3>
         <div class="row justify-content-center people">
           <div class="col-md-6 col-lg-4 item">
                       <div class="box"><img class="rounded-circle" src="sty/img/brent1.jpg">
-                          <h3 class="name"><a href="https://www.github.com/MrDemeanor"></a>Brent Redmon</h3>
-                          <p class="title">Undergraduate Research Assistant</p>
-                          <p class="description">Brent's research  focuses on scalable satellite imagery object detection on edge.<br></p>
+                          <h3 class="name">Brent Redmon</h3>
+                          <p class="title">2019 Undergraduate Research Assistant</p>
+                          <p class="description"><a href="https://www.github.com/MrDemeanor"><i class="icon ion-social-github"></i></a></p>
                       </div>
-                  </div>
-        </div>
-        <div class="team-boxed">
-          <div class="container">
-            <div class="row justify-content-center people">
-              <div class="col-md-6 col-lg-4 item">
-                          <div class="box"><img class="rounded-circle" src="sty/img/daniel.jpg">
+         </div>
+         <div class="col-md-6 col-lg-4 item">
+                          <div class="box"><img class="rounded-circle" src="sty/img/daniel.gif">
                               <h3 class="name">Daniel Le</h3>
-                              <p class="title">Undergraduate Research Assistant</p>
-                              <p class="description">Daniel's research  focused on data processing from ArcGIS format to deep learning compatible image annotations. <br></p>
+                              <p class="title">Spring 2019 Undergraduate Research Assistant</p>
+                              <p class="description"><br></p>
                           </div>
-                      </div>
-            </div>
-
-            <div class="team-boxed">
-              <div class="container">
-                <div class="row justify-content-center people">
-                  <div class="col-md-6 col-lg-4 item">
-                              <div class="box"><img class="rounded-circle" src="sty/img/daniel.jpg">
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+                              <div class="box"><img class="rounded-circle" src="sty/img/connie.jpg">
                                   <h3 class="name">Constance Xu</h3>
-                                  <p class="title">NSF REU Summer Researcher</p>
-                                  <p class="description">Connie's research focued on feasibility of deploying overhead image recognition on NVIDIA JETSON TX2 <br></p>
-                              </div>
-                          </div>
-                </div>
+                                  <p class="title">2019 Summer Researcher</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <embed type="text/html" src="footer.html">
+    <div class="text-center" style="background-color: rgb(238,244,247);">
+        <p class="text-center".</p> This material is based upon work supported in part by the NAVAIR N68335-18-C-0199, NSF REU #1757893, and NSF-CRI 1305302 awards. Any opinions findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the U.S. Goverment, National Science Foundation, or Department of Defense.
+        </div>
+
+
+     <embed type="text/html" src="footer.html">
 
             <script src="sty/js/jquery.min.js"></script>
             <script src="sty/js/bootstrap.bundle.min.js"></script>
