@@ -6,9 +6,39 @@
   <link rel="stylesheet" href="sty/css/font-awesome.min.css">
   <link rel="stylesheet" href="sty/css/ionicons.min.css">
   <link rel="stylesheet" href="sty/css/styles.min.css">
-  <title>Data Lab at Texas State</title>
+  <title>Health Data Lab at Texas State</title>
 </head>
+
 <body>
+  <section>
+  <nav class="navbar navbar-expand-xl">
+      <button type="button" class="navbar-toggler btn-lg btn-block" data-toggle="collapse" data-target="#navcol-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav mx-auto" style="font-size: 22px;">
+        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-item" role="presentation" href="maritime.html">Deep Learning For Maritime Domain</a>
+          <a class="dropdown-item" role="presentation" href="aerial.html">Object Detection at Multiple Levels of Description</a>
+          <a class="dropdown-item" role="presentation" href="health.html">Detecting Structures in Overhead Imagery</a>
+          <a class="dropdown-item" role="presentation" href="social.html">Detecting Structures in Overhead Imagery</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Tools</a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/AerialPipeline">AerialPipeline</a>
+          <a class="dropdown-item" role="presentation" href="https://github.com/MrDemeanor/separatus">Box2Mask Iterative Tool</a>
+          <a class="dropdown-item" role="presentation" href="https://github.com/nickeleye/VGG-Image-Annotator-for-COCO-json">VIA extension tool</a>
+          <a class="dropdown-item" role="presentation" href="https://github.com/MrDemeanor/Mask-RCNN-WebApp">WebApp wrapper for MaskRCNN</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  </section>
 
   <div class="jumbotron_with_image" style="background-image: url(health/img/health.png);background-size: auto;background-position: center;height: 150px; color: #000000">
     <h1 class="text-center">Scalable health Data Integration: </h1>
@@ -49,16 +79,15 @@
 	</div>
 </div>
 
-    <div class="footer-basic">
-        <footer>
-            <ul class="list-inline">
-				<li class="list-inline-item"><a href="index.html">TXST Data Lab</a></li>
-                <li class="list-inline-item"><a href="https://cs.txstate.edu">CS @ TXST</a></li>
-				<li class="list-inline-item"><a href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
-            </ul>
-            <p class="copyright">DataLab12 @ TXST</p>
-        </footer>
-    </div>
+<div class="footer-basic">
+  <ul class="list-inline ">
+     <li class="list-inline-item"><a href="index.html">Data Lab</a></li>
+     <li class="list-inline-item"><a href="https://cs.txstate.edu">CS</a> @ TXST</li>
+     <li class="list-inline-item"><a href="https://www.github.com/DataLab12"><i class="icon ion-social-github"></i></a></li>
+   </ul>
+   <p class="copyright">DataLab12 @ TXST</p>
+ </div>
+
     <script src="sty/js/jquery.min.js"></script>
     <script src="sty/js/bootstrap.bundle.min.js"></script>
     <script src="sty/js/script.min.js"></script>
