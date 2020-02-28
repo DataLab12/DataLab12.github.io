@@ -6,12 +6,29 @@
   <link rel="stylesheet" href="sty/css/font-awesome.min.css">
   <link rel="stylesheet" href="sty/css/ionicons.min.css">
   <link rel="stylesheet" href="sty/css/styles.min.css">
+
+  <!-- Bootstrap core CSS
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom fonts for this template -->
+  <link href="startbootstrap-landing-page-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="startbootstrap-landing-page-gh-pages/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="startbootstrap-landing-page-gh-pages/css/landing-page.min.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  
+  
   <title>Data Lab at Texas State University</title>
 </head>
 
 <body>
   <section>
-  <nav class="navbar navbar-expand-xl">
+    
+  <nav class="navbar navbar-light navbar-expand-xl" style="margin-bottom:auto;">
       <button type="button" class="navbar-toggler btn-lg btn-block" data-toggle="collapse" data-target="#navcol-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="navbar-toggler-icon"></span>
@@ -24,7 +41,7 @@
           <a class="dropdown-item" role="presentation" href="maritime.html">Maritime Data</a>
           <a class="dropdown-item" role="presentation" href="aerial.html">Aerial Data</a>
           <a class="dropdown-item" role="presentation" href="health.html">Health Data</a>
-          <a class="dropdown-item" role="presentation" href="social.html">Social Data</a>
+          <a class="dropdown-item" role="presentation" href="startbootstrap-landing-page-gh-pages/social.html">Social Data</a>
 
         </div>
       </li>
@@ -41,35 +58,59 @@
   </nav>
   </section>
 
-    <div class="jumbotron_with_image" style="background-image: url(sty/img/frontpage.jpg);background-size: auto;background-position: center;height: 226px;">
+    <!-- <div class="jumbotron_with_image" style="background-image: url(sty/img/frontpage.jpg);background-size: auto;background-position: center;height: 226px;">
       <h1 class="text-center"><br /><strong>Data Lab @ Texas State University</strong></h1>
       <h3 class="text-center">Research Highlights</h3>
+    </div> -->
+    <!-- Masthead -->
+  <header class="masthead text-white text-center" >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <!-- <h1 class="mb-5"></h1> -->
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <img class ="img-fluid" src='startbootstrap-landing-page-gh-pages/img/data-lab-final.png'>
+              <!-- <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div> -->
+              <!-- <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div> -->
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+  </header>
 
   <div class="team-boxed">
     <div class="container-fluid-xl">
       <div class="row justify-content-center">
         <div class="col-sm-6 col-md-4 col-lg-3 item">
-          <div class="box"><img class="rounded-circle" src="maritime/img/maritime2.jpg">>
-            <p class="title"><a href="maritime.html">Object Localization and Identification in Maritime Videos</a></p>
+          <div class="box h-100"><img class="rounded-circle" src="maritime/img/maritime2.jpg">>
+            <p class="title link-style" style="font-size: medium;"><a href="maritime.html">Object Localization and Identification in Maritime Videos</a></p>
             <p class="description"><i>Motivation:</i> Maritime imagery properties differ from consumer imagery. How applicable are state-of-art machine learning method to this domain for piracy detection? <i>Approach:</i> Proposed and deployed multiple solutions for high-confidence maritime object detection, small sample learning schema for maritime object identification given few samples, and maritime activity modeling.</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 item">
-          <div class="box"><img class="rounded-circle" src="aerial/img/aerial.png">
-            <p class="title"><a href="aerial.html">Identifying Structures in Aerial Imagery</a></p>
+          <div class="box h-100"><img class="rounded-circle" src="aerial/img/aerial.png">
+            <p class="title link-style" style="font-size: medium;"><a href="aerial.html">Identifying Structures in Aerial Imagery</a></p>
             <p class="description"><i>Motivation:</i> How to utilize open source city data to improve the AI systems? <i>Approach:</i> Transform open source city data to machine vision training data; adapt and train deep network to identify structures of varying size in overhead imagery; adjust framework to work on edge, and deploy it on Nvidia Jetson TX2 mobile platform. </p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 item">
-          <div class="box"><img class="rounded-circle" src="health/img/health2.png">
-            <p class="title"><a href="health.html">Sclalable Health Data Integration and Analysis</a></p>
+          <div class="box h-100"><img class="rounded-circle" src="health/img/health2.png">
+            <p class="title link-style" style="font-size: medium;"><a href="health.html">Sclalable Health Data Integration and Analysis</a></p>
             <p class="description"><i>Motivation:</i> Health data is unstructured, noisy, and incomplete.  How can data science help unlock the information? <i>Approach:</i>  Revisit state-of-art from data science perspective; utilize data reduction and network techniques to scale integration and analysis of biological and clinical data.</p>
           </div>
         </div>
       <div class="col-sm-6 col-md-4 col-lg-3 item">
-        <div class="box"><img class="rounded-circle" src="social/img/social.png">
-          <p class="title"><a href="social.html">Scaling Social Balance Theory for Social and Content Network Analysis</a></p>
+        <div class="box h-100"><img class="rounded-circle" src="social/img/social.png">
+          <p class="title link-style" style="font-size: medium;"><a href="startbootstrap-landing-page-gh-pages/social.html">Scaling Social Balance Theory for Social and Content Network Analysis</a></p>
           <p class="description"><i> Motivation: </i> Social Networks model the community dynamics.  How to describe and identify inequity and bias in that community? <i>Approach:</i> Propose innovative scalable graph processing algorithm that scales social balance theory to automatically quantify disbalance and to predict outcomes in social and content networks.</p>
         </div>
       </div>
