@@ -20,15 +20,17 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+  <link rel="stylesheet" src="popupForm/form.css">
+  
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" > -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" src="popupForm/form.css">
-  <script src="popupForm/form.js"></script> -->
+  <link rel="stylesheet" src="popupForm/form.css">
+  
 
 </head>
 
@@ -45,10 +47,10 @@
           <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
           <div class="dropdown-menu" role="menu">
-            <a class="dropdown-item" role="presentation" href="maritime.html">Maritime Data</a>
-            <a class="dropdown-item" role="presentation" href="aerial.html">Aerial Data</a>
-            <a class="dropdown-item" role="presentation" href="health.html">Health Data</a>
-            <a class="dropdown-item" role="presentation" href="startbootstrap-landing-page-gh-pages/social.html">Social Data</a>
+            <a class="dropdown-item" role="presentation" href="../maritime.html">Maritime Data</a>
+            <a class="dropdown-item" role="presentation" href="../aerial.html">Aerial Data</a>
+            <a class="dropdown-item" role="presentation" href="../health.html">Health Data</a>
+            <a class="dropdown-item" role="presentation" href="social.html">Social Data</a>
   
           </div>
         </li>
@@ -60,11 +62,11 @@
             <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/MaskRCNN-WebApp">WebApp wrapper for Mask RCNN</a>
           </div>
         </li>
+        <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Contact</a></li>
       </ul>
     </div>
     </nav>
     </section>
-
   <!-- Navigation -->
   <!-- <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
@@ -97,7 +99,7 @@
       </div>
     </div>
   </header>
-
+  
   <!-- Icons Grid -->
   <section class="features-icons bg-light text-center" style="padding-top: 30px">
     <div class="container">
@@ -126,22 +128,25 @@
               <i class="icon-check m-auto text-primary"></i>
             </div>
             <h3>Meaningful Results</h3>
-            <p class="lead mb-0"> Our analysis technique analyzes  </p>
+            <p class="lead mb-0"> Our analysis technique analyzes the enti </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <div class="container1">
-  <div class="container-box rotated">
-      <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal" style="opacity: .7;">Contact Us</button>
-  </div>
+  <hr style="display: block; margin:0px; border-style: outset; border-width: 1px;">
+  
 
-  <div id="myModal" class="modal fade" role="dialog">
+  <!-- Email Pop-up Modal -->
+    <form
+  action="https://formspree.io/xgeydqdb"
+  method="POST">
+
+   <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
           <div class="modal-content">
-              <div class="modal-header">
+              <div class="modal-header" style="font-size: xx-large;"> Contact Us!
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   
               </div>
@@ -158,38 +163,40 @@
                       </div>
                       <div class="form-group">
                           <label for="name"> Message:</label>
-                          <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                          <input class="form-control" type="text" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7" style="height: 100px;"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                      <button type="submit" class="btn btn-lg btn-success btn-block" id="my-form-button">Send message </button>
                   </form>
-                  <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                  <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
               </div>
           </div>
       </div>
-    </div> -->
+    </div>
+  </form>
+
+
+
 
   <!-- Image Showcases -->
   <section class="showcase">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
+      <div class="row no-gutters ">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background: url('img/graphBExample.png') no-repeat center center;background-size: 60% 100%; background-color:lightgrey; background-size:contain;"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background: url('img/graphBExample.png') no-repeat center center;background-size: 60% 100%; background-color:lightgrey; background-size:contain; min-height: 600px; "></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Analysis of Wikipedia Elections</h2>
           <p class="lead mb-0"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background: url('img/statusMainExample.png') no-repeat center center;background-size: 60% 100%;background-color:lightgrey; background-size:contain;"></div>
+      <div class="row no-gutters border-bottom">
+        <div class="col-lg-6 text-white showcase-img" style="background: url('img/statusMainExample.png') no-repeat center center;background-size: 60% 100%;background-color:lightgrey; background-size:contain; min-height: 600px;"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Analysis of Healthcare Data</h2>
           <p class="lead mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background: url('img/W7Promotion.png') no-repeat center center;background-size: 60% 100%;background-color:lightgrey; background-size:contain;"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background: url('img/test.jpg') no-repeat center center;background-size: 60% 100%;background-color:lightgrey; background-size:contain; min-height: 600px;"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Easy to Use &amp; Customize</h2>
           <p class="lead mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -197,8 +204,24 @@
       </div>
     </div>
   </section>
+  <hr style="display: block; margin:0px; border-style: inset; border-width: 1px;">
 
-  <!-- Testimonials -->
+  
+
+  <!-- Project Video Demonstration -->
+  <div style="background-color: #f8f9fa; padding: 10%; background-color:black;">
+    
+    <h1 class="display-1 text-center showcase-text text-white" style="padding-bottom: 120px; word-wrap: break-word;" id="video-dem"> <i><b>Video Demonstration</b></i> </h1>
+    <div class=" container mx-auto d-block">
+      
+          <div class="embed-responsive embed-responsive-16by9" style="max-width: 1200px;  left: -1px;">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+    </div>
+  </div>
+  
+<hr style="display: block; margin:0px; border-style: inset; border-width: 1px;">
+  <!-- Team Members -->
   <section class="testimonials text-center bg-light">
     <div class="container">
       <div class="container">
@@ -274,26 +297,10 @@
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; DataLab 2020. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
+          
         </div>
       </div>
     </div>
@@ -302,6 +309,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
