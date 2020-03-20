@@ -6,42 +6,45 @@
   <link rel="stylesheet" href="sty/css/font-awesome.min.css">
   <link rel="stylesheet" href="sty/css/ionicons.min.css">
   <link rel="stylesheet" href="sty/css/styles.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  
   <title>Maritime Data Lab at Texas State</title>
 </head>
 
 <body>
   <section>
-  <nav class="navbar navbar-expand-xl">
-      <button type="button" class="navbar-toggler btn-lg btn-block" data-toggle="collapse" data-target="#navcol-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav mx-auto" style="font-size: 22px;">
-        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
-        <div class="dropdown-menu" role="menu">
-          <a class="dropdown-item" role="presentation" href="maritime.html">Maritime Data</a>
-          <a class="dropdown-item" role="presentation" href="aerial.html">Aerial Data</a>
-          <a class="dropdown-item" role="presentation" href="health.html">Health Data</a>
-          <a class="dropdown-item" role="presentation" href="startbootstrap-landing-page-gh-pages/social.html">Social Data</a>
-
-        </div>
-      </li>
-      <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Tools</a>
-        <div class="dropdown-menu" role="menu">
-          <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/AerialPipeline">AerialPipeline</a>
-          <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/Boxes2Masks">Iterative Boxes2Masks Tool</a>
-          <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/VIA-JSON">VIA JSON extension tool</a>
-          <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/MaskRCNN-WebApp">WebApp wrapper for Mask RCNN</a>
-        </div>
-      </li>
-      <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" data-target="#myModal" style="cursor:pointer; color: #007bff;">Contact</a></li>
-
-    </ul>
-  </div>
-  </nav>
-  </section>
+    <nav class="navbar navbar-light navbar-expand-xl" style="margin:auto; background-color: #f8f9fa;">
+        <button type="button" class="navbar-toggler btn-lg btn-block" data-toggle="collapse" data-target="#navcol-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav mx-auto" style="font-size: 22px;">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Projects</a>
+          <div class="dropdown-menu" role="menu">
+            <a class="dropdown-item" role="presentation" href="../maritime.html">Maritime Data</a>
+            <a class="dropdown-item" role="presentation" href="../aerial.html">Aerial Data</a>
+            <a class="dropdown-item" role="presentation" href="../health.html">Health Data</a>
+            <a class="dropdown-item" role="presentation" href="./startbootstrap-landing-page-gh-pages/social.html">Social Data</a>
+  
+          </div>
+        </li>
+        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Tools</a>
+          <div class="dropdown-menu" role="menu">
+            <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/AerialPipeline">AerialPipeline</a>
+            <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/Boxes2Masks">Iterative Boxes2Masks Tool</a>
+            <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/VIA-JSON">VIA JSON extension tool</a>
+            <a class="dropdown-item" role="presentation" href="https://github.com/DataLab12/MaskRCNN-WebApp">WebApp wrapper for Mask RCNN</a>
+          </div>
+        </li>
+        <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+    </section>
 
   <!-- Email Pop-up Modal -->
 
@@ -84,18 +87,20 @@
 
   <div class="jumbotron_with_image" style="background-image: url(maritime/img/maritime.jpg);background-size: auto;background-position: center;height: 300px;">
     <h1 class="text-center"><strong><br /><br /><br />  </ br>Object Localization and Identification in Maritime Domain</strong></h1>
-    <h3 class="text-center">Overhead Imagery and Video Data</h3>
+    <h2 class="text-center">Overhead Imagery and Video Data</h2>
   </div>
 
-  <div class="container-fluid text-center" style="background-color: rgb(238,244,247);">
+  <div class="container-fluid text-center" style="background-color: rgb(238,244,247); margin: auto;">
 
     <h3 class="text-center">  </ br>Identifying Maritime Vessels at Multiple Levels of Descriptions using Deep Features</h3>
     <div class="text-center">David Bo Heyse, Nicholas Warren, and Jelena Te&#353i&#263;</i> </div>
     <div class="text-center">Artificial Intelligence and Machine Learning for Multi-Domain Operations Applications, SPIE vol. 11006, Apr 2019, Baltimore, MD. </div>
 
-    <div class = "container-fluid" style="background-color: rgb(255,255,255);">"
-    <b>Abstract</b> :Varying resolution quality of operational data, size of targets, view occlusions, and large variation in sensors due to nature of overhead systems as compared to consumer devices contribute to degradation of the maritime vessel identification. We exploit the maritime domain characteristics to optimize and refine the deep learning Mask-RCNN framework for training generic maritime vessel classes. Maritime domain, compared to consumer domain, lack alternative targets that would be incorrectly associated as maritime vehicles: this allows us to relax the parameter constraints learned on urban natural scenes in consumer photos, adjust parameters of the model inference, and achieve robust performance and high AP measure for transfer learning scenarios. In this paper, we build upon this robust localization work, and extend our transfer learning work to new domains and datasets. We propose new approach for identifying specific category of maritime vessels and build a refined multi-label classifier that is based on deep Mask-RCNN features. The classifier is designed to be robust to domain transfer (e.g. different overhead maritime video feed), and to the noise in the data annotation (e.g. vessel is not correctly marked or label is ambiguous). We demonstrate superior category classification results of this low shot learning approach on publicly available MarDCT dataset. </ br>
+    <div class = "container-fluid" style="background-color: rgb(255,255,255); ">
+      <p class="lead mb-0" style="margin-top: 1%; margin-bottom: 1%;">
+        <b>Abstract</b> :Varying resolution quality of operational data, size of targets, view occlusions, and large variation in sensors due to nature of overhead systems as compared to consumer devices contribute to degradation of the maritime vessel identification. We exploit the maritime domain characteristics to optimize and refine the deep learning Mask-RCNN framework for training generic maritime vessel classes. Maritime domain, compared to consumer domain, lack alternative targets that would be incorrectly associated as maritime vehicles: this allows us to relax the parameter constraints learned on urban natural scenes in consumer photos, adjust parameters of the model inference, and achieve robust performance and high AP measure for transfer learning scenarios. In this paper, we build upon this robust localization work, and extend our transfer learning work to new domains and datasets. We propose new approach for identifying specific category of maritime vessels and build a refined multi-label classifier that is based on deep Mask-RCNN features. The classifier is designed to be robust to domain transfer (e.g. different overhead maritime video feed), and to the noise in the data annotation (e.g. vessel is not correctly marked or label is ambiguous). We demonstrate superior category classification results of this low shot learning approach on publicly available MarDCT dataset. </ br>
     <b>Paper</b> :<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11006/1100616/Identifying-maritime-vessels-at-multiple-levels-of-descriptions-using-deep/10.1117/12.2519248.short?SSO=1"><i class="icon ion-document-text"></i></a>
+      </p>
     </div>
   </div>
 
@@ -105,10 +110,11 @@
         <div class="text-center">Nicholas Warren, Benjamin Garrard, Elliot Staudt, and Jelena Te&#353i&#263;</i> </div>
         <div class="text-center">2018 IEEE 4th International Conference on Collaboration and Internet Computing (CIC), Pages 246-255, Oct 2018 Philadelphia, PA.</div>
 
-        <div class = "container-fluid" style="background-color: rgb(255,255,255);">"
-
-          <b>Abstract</b> : Recent advances in deep learning for visual recognition demonstrate high performing pipeline for building and deploying well-performing content models. These advances come with underlying assumptions of the data characteristics pertaining to consumer image and video and availability of the large set of annotated data. In this paper we show how to apply lessons learned in the consumer domain to overhead maritime video corpora. We present how to successfully tune deep learning network to overhead maritime domain and tune parameters to new domain characteristics to achieve high performance metric with smaller set of domain annotations. This approach improves the state-of-the-art metric by 80% on maritime IPATCH data. Next, we present challenges and propose several approaches on user collaboration for maritime asset identification, and introduce the notion of persistent and intermittent models.
-          <b>Paper</b> :<a href="https://ieeexplore.ieee.org/abstract/document/8537839"><i class="icon ion-document-text"></i></a>
+        <div class = "container-fluid" style="background-color: rgb(255,255,255);">
+          <p class="lead mb-2" style="margin-top: 1%; margin-bottom: 1%;">
+            <b>Abstract</b> : Recent advances in deep learning for visual recognition demonstrate high performing pipeline for building and deploying well-performing content models. These advances come with underlying assumptions of the data characteristics pertaining to consumer image and video and availability of the large set of annotated data. In this paper we show how to apply lessons learned in the consumer domain to overhead maritime video corpora. We present how to successfully tune deep learning network to overhead maritime domain and tune parameters to new domain characteristics to achieve high performance metric with smaller set of domain annotations. This approach improves the state-of-the-art metric by 80% on maritime IPATCH data. Next, we present challenges and propose several approaches on user collaboration for maritime asset identification, and introduce the notion of persistent and intermittent models.
+            <b>Paper</b> :<a href="https://ieeexplore.ieee.org/abstract/document/8537839"><i class="icon ion-document-text"></i></a>
+          </p>
         </div>
   </div>
 
