@@ -367,6 +367,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -392,6 +394,11 @@ figcaption {
 
 .paragraph-light.hometextcolor {
   color: #fff;
+}
+
+.paragraph-light.special-case-no-padding {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .heading-jumbo {
@@ -872,6 +879,12 @@ figcaption {
 
 .details-wrap {
   margin-bottom: 30px;
+  padding-right: 0px;
+}
+
+.details-wrap.special-case-padding-fix {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .get-in-touch-form {
@@ -1809,7 +1822,8 @@ figcaption {
 
 .list-item {
   display: block;
-  padding-right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
@@ -2232,6 +2246,79 @@ figcaption {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.heading-13 {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.div-block-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.list-3 {
+  display: block;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.list-item-5 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.bold-text {
+  font-weight: 400;
+}
+
+.list-item-6 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-item-7 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-item-8 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-item-9 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.text-block-2 {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 991px) {
