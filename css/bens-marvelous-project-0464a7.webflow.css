@@ -3283,6 +3283,10 @@ figcaption {
     margin-top: 0px;
     margin-left: 10px;
   }
+  .grid-2 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
   .grid-3 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -3294,6 +3298,13 @@ figcaption {
     line-height: 20px;
     -o-object-fit: scale-down;
     object-fit: scale-down;
+  }
+  .grid-5 {
+    justify-items: stretch;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
   }
   .heading-11 {
     margin-right: 20px;
@@ -3429,6 +3440,9 @@ figcaption {
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .container-3 {
+    display: none;
   }
 }
 
