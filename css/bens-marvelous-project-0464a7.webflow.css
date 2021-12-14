@@ -418,7 +418,7 @@ figcaption {
 .heading-jumbo {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #501818;
+  color: #501214;
   font-size: 64px;
   line-height: 80px;
   text-transform: none;
@@ -437,10 +437,16 @@ figcaption {
   text-decoration: none;
 }
 
-.heading-jumbo.heading-project-1 {
+.heading-jumbo.heading-project1 {
   margin-top: 10px;
-  background-color: #000;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
+}
+
+.heading-jumbo.heading-project3 {
+  margin-top: 10px;
+  color: #501214;
+  background-color: #6A5638;
   text-align: center;
 }
 
@@ -460,7 +466,7 @@ figcaption {
 
 .heading-jumbo-small.introstatement {
   padding-top: 50px;
-  color: #501818;
+  color: #501214;
   font-size: 30px;
   line-height: 50px;
 }
@@ -586,7 +592,7 @@ figcaption {
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
   font-family: Montserrat, sans-serif;
-  color: #501818;
+  color: #501214;
   font-size: 18px;
   line-height: 28px;
   font-weight: 700;
@@ -1264,7 +1270,7 @@ figcaption {
 
 .project-name-link {
   margin-bottom: 5px;
-  color: #501818;
+  color: #501214;
   font-size: 22px;
   line-height: 32px;
   font-style: italic;
@@ -1321,12 +1327,13 @@ figcaption {
   color: #fff;
 }
 
-.project-overview-header.cc-project-2-header {
-  background-image: url('../images/portfolio-2---wide.svg');
-  background-position: 50% 50%;
+.project-overview-header.project1 {
+  background-image: url('../images/data-background-light.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
 }
 
-.project-overview-header.project1 {
+.project-overview-header.project2 {
   background-image: url('../images/system-2660914.jpg');
   background-position: 0px 0px;
   background-size: cover;
@@ -1692,7 +1699,7 @@ figcaption {
 }
 
 .text-span-home {
-  color: #501818;
+  color: #501214;
 }
 
 .text-span-home.hometextcolor {
@@ -1706,7 +1713,7 @@ figcaption {
   margin-bottom: 20px;
   margin-left: 0px;
   padding-left: 0px;
-  color: #501818;
+  color: #501214;
   font-weight: 400;
   text-align: center;
 }
@@ -1729,7 +1736,7 @@ figcaption {
 .work-heading-home {
   margin-top: 10px;
   margin-bottom: 20px;
-  color: #501818;
+  color: #501214;
   font-weight: 400;
 }
 
@@ -1774,14 +1781,14 @@ figcaption {
 .heading {
   margin: auto;
   padding-top: 0px;
-  color: #501818;
+  color: #501214;
   font-size: 48px;
   font-weight: 500;
   text-align: center;
 }
 
 .heading-2 {
-  color: #501818;
+  color: #501214;
 }
 
 .image {
@@ -2080,7 +2087,7 @@ figcaption {
 .heading-7 {
   margin-bottom: 0px;
   padding-top: 20px;
-  color: #501818;
+  color: #501214;
   font-size: 54px;
   line-height: 40px;
   font-style: normal;
@@ -2096,7 +2103,7 @@ figcaption {
 }
 
 .heading-9 {
-  color: #501818;
+  color: #501214;
 }
 
 .heading-10 {
@@ -2126,13 +2133,13 @@ figcaption {
 }
 
 .heading-11 {
-  color: #501818;
+  color: #501214;
   font-size: 28px;
   font-weight: 400;
 }
 
 .heading-12 {
-  color: #501818;
+  color: #501214;
   font-size: 28px;
 }
 
