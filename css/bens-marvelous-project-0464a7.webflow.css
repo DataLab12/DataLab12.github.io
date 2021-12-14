@@ -145,9 +145,9 @@ figcaption {
 .section {
   display: block;
   width: auto;
-  margin-right: 30px;
-  margin-left: 30px;
-  padding-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 0px;
   float: none;
   clear: none;
 }
@@ -155,8 +155,8 @@ figcaption {
 .section.cc-cta {
   margin-right: 0px;
   margin-left: 0px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #f4f4f4;
 }
 
@@ -177,8 +177,8 @@ figcaption {
 
 .styleguide-block {
   display: block;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -198,14 +198,14 @@ figcaption {
   height: 100%;
   max-width: 1400px;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   margin-left: auto;
-  padding: 60px 100px;
+  padding: 40px 40px;
   float: none;
   clear: left;
   grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
@@ -215,12 +215,13 @@ figcaption {
   border-color: #ad9166;
   border-radius: 100px;
   background-color: #f7f7f7;
+  text-align: left;
 }
 
 .container.cta-image {
   margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-width: 0px;
   border-color: #ad9166;
   background-color: #f4f4f4;
@@ -446,7 +447,7 @@ figcaption {
 .heading-jumbo.heading-project3 {
   margin-top: 10px;
   color: #501214;
-  background-color: #6A5638;
+  background-color: #ad9166;
   text-align: center;
 }
 
@@ -881,8 +882,8 @@ figcaption {
 }
 
 .section-heading-wrap {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -938,6 +939,12 @@ figcaption {
 
 .details-wrap {
   margin-bottom: 30px;
+  padding-right: 0px;
+}
+
+.details-wrap2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
   padding-right: 0px;
 }
 
@@ -1710,7 +1717,7 @@ figcaption {
   width: auto;
   height: auto;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 0px;
   padding-left: 0px;
   color: #501214;
@@ -2507,7 +2514,7 @@ figcaption {
 }
 
 .list-item-12 {
-  text-align: left;
+  text-align: center;
 }
 
 .div-block-14 {
@@ -2553,8 +2560,8 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
