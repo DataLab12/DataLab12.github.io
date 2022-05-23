@@ -1787,3 +1787,21 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
+
+.w-layout-grid.team-members.alumni {
+  display: block !important;
+}
+.w-layout-grid.team-members.alumni div {
+  display: block;
+  width: 20%;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 4x;
+}
+.w-layout-grid.team-members.alumni div div {
+  width: 100%;
+}
+
+.details-wrap2 {
+  overflow: hidden;
+}
