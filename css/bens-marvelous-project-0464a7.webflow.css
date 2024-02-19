@@ -20,7 +20,7 @@ body {
 }
 
 .scrollable-div {
-  height: 500px; /* Set the desired height */
+  height: 600px; /* Set the desired height */
   overflow-y: auto; /* Enable vertical scrolling */
 }
 
