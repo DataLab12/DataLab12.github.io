@@ -1796,7 +1796,7 @@ textarea.w-select {
   width: 20%;
   float: left;
   margin-bottom: 20px;
-  margin-left: 4x;
+  margin-left: 4px;
 }
 .w-layout-grid.team-members.alumni div div {
   width: 100%;
@@ -1804,4 +1804,18 @@ textarea.w-select {
 
 .details-wrap2 {
   overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .w-layout-grid.team-members.alumni > div {
+    width: 50%;
+  }
+}
+
+/* phones: 1 column */
+@media (max-width: 767px) {
+  .w-layout-grid.team-members.alumni > div {
+    width: 100%;
+    float: none;
+  }
 }
