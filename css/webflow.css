@@ -1819,3 +1819,70 @@ textarea.w-select {
     float: none;
   }
 }
+
+.people-section { margin: 0; padding: 0; }
+.people-group { margin: 0 0 60px 0; }
+
+
+.people-label {
+
+  font: inherit;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+
+.people-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  column-gap: 80px;
+  row-gap: 50px;
+  align-items: start;
+}
+
+
+.person-card{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.person-name { 
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 6px 0;
+  overflow-wrap: anywhere;
+}
+
+.person-name a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.person-area{
+
+  font-size: 15px;
+  line-height: 1.3;
+  opacity: 0.75;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.person-area + .person-area { margin-top: 4px; }
+
+@media (max-width: 767px) {
+  .people-grid{
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    column-gap: 0;
+  }
+  .person-name{ font-size: 18px; }
+  .person-area{ font-size: 14px; }
+}
